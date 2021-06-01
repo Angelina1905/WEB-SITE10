@@ -6,15 +6,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
       <link rel="font" href="font/stylesheet.css">
-<script type="text/javascript">
-$(document).ready(function(){
-$(document).mousemove(function(e) {
-$('#cursor').css({
-  left:e.pageX - 10,
-  top:e.pageY - 10
-});
-});});
-</script>
+      <!-- <script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script> -->
 
 
     <style media="screen">
@@ -151,9 +151,61 @@ line-height: 24px;
 color: #6B6B6B;
 
 }
+/* .preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  /* фоновый цвет */
+  /* background: #e0e0e0;
+  z-index: 1001;
+}
+
+.wrapper {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+} */ */
+
+/* @keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+} */
+
+
+
+
     </style>
   </head>
   <body>
+    <!-- <div class="preloader">
+      <div class="wrapper">
+        <svg class="preloader__image" svg width="1418" height="974" viewBox="0 0 1418 974" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-55.5 56.0001C-18.5 176.5 656.5 219 867 176.5C1077.5 134 798 23.5 554.5 56C386.73 78.3923 71.5001 245.5 85.0001 351C98.5001 456.5 648 507 773.5 448C899 389 567 264.08 419 385.58C271 507.08 401.166 611.891 640.5 666.5C818 707 1183 765 1278.5 647.5C1374 530 1177.03 404.404 959 558.5C759.5 699.5 936 875 1199.5 895C1463 915 1357.5 796 1278.5 816C1215.3 832 1039.5 960.5 999 1046" stroke="#FEDCDB" stroke-width="100"/>
+        </svg>
+      </div>
+    </div> -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="javascripts/jquery.drawsvg.js"></script>
+    <script src="javascripts/main.js"></script>
     <div id="cursor">
       <img "images/ellipse1.jpeg" class="e1lipse1">
     </div>
