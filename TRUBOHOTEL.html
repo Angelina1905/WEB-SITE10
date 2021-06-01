@@ -6,25 +6,35 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
       <link rel="font" href="font/stylesheet.css">
-    <script type="text/javascript">
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).mousemove(function(e) {
+$('#cursor').css({
+  left:e.pageX - 10,
+  top:e.pageY - 10
+});
+});});
+</script>
 
-    $(function () {
-      let count = 0;
-      $('.png').click(function () {
-        count += 1;
-        if (count == 2) {
-          $(this).removeClass('png');
-        }
-      });
-    });
-    </script>
+
     <style media="screen">
+
+    #cursor {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%/50%;
+    animation: color_change 8s infinite;
+}
       @import 'stylesheet.css';
       html {
         font-size: 1.5vw;
       }
       body {
         background-color: #FEDCDB;
+      }
+      .a6 {
+        font-size: .25em;
       }
       .background {
         min-height: 100%;
@@ -125,22 +135,47 @@ line-height: 57px;
 z-index: 4;
 color: #000000;
 }
-.png {
-  cursor: url("file:///C:/Users/79234/Documents/GitHub/WEB-SITE10/images/ellipse1.jpg"), auto;
+.p {
+  position: absolute;
+width: 401.58px;
+height: 32px;
+left: 871px;
+top: 1475px;
+
+font-family: Mazzard;
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 24px;
+
+color: #6B6B6B;
+
 }
     </style>
   </head>
   <body>
+    <div id="cursor">
+      <img "images/ellipse1.jpeg" class="e1lipse1">
+    </div>
     <p>
-      Трубопровотдых — это отель в трубах, в&nbsp;котором можно найти развлечение по&nbsp;душе, отдохнуть со своей семьёй или остаться наедине с самим собой.</p>
+      Трубопровотдых — это отель в трубах,<br> в котором можно найти развлечение по&nbsp;душе, отдохнуть со своей семьёй или остаться наедине с самим собой.</p>
     <div class="ellipse1 png"></div>
     <div class="ellipse2"></div>
     <div class="ellipse3"></div>
     <div class="ellipse4"></div>
     <div id="draggable"></div>
   <img src="images/burger.svg" class="burger">
+  <a href="%URL%" class="burger"></a>
     <h1>ТРУБОПРОВОТДЫХ</h1>
-    <h2>НОМЕР «СТАНДАРТ»</h2>
+
+    <div class="a6">
+    <h1>НОМЕР «СТАНДАРТ»</h1>
+    <div class="p">
+      <p>Количество намеров: 2 <br> Количество гостей: 2 <br> Площадь: 40кв.м <br></p>
+    </div>
+    </div>
+
+
 <img src="images/background.jpg" class="background">
   </body>
 </html>
