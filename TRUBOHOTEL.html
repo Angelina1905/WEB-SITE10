@@ -20,12 +20,20 @@
     <style media="screen">
 
     #cursor {
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%/50%;
-    animation: color_change 8s infinite;
-}
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%/50%;
+  animation: color_change 8s infinite;
+  z-index: 15;
+  }
+   @-webkit-keyframes color_change {
+  0% {background-color: red;}
+  25% {background-color: orange;}
+  50% {background-color: yellow;}
+  75% {background-color: blue;}
+  100% {background-color: red;}
+  }
       @import 'stylesheet.css';
       html {
         font-size: 1.5vw;
@@ -108,14 +116,13 @@ z-index: 3;
 }
 p {
 position: absolute;
-width: 550px;
-height: 165px;
-left: 390px;
-top: 458px;
+left: 0;
+right: 0;
+top: 65%;
 font-family: Mazzard;
 font-style: normal;
 font-weight: 300;
-font-size: 26px;
+font-size: 1.25em;
 line-height: 152%;
 text-align: center;
 color: #000000;
@@ -152,51 +159,23 @@ line-height: 24px;
 color: #6B6B6B;
 
 }
-/* .preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-  /* фоновый цвет */
-  /* background: #e0e0e0;
-  z-index: 1001;
-}
-
-.wrapper {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  width: 70px;
-  height: 70px;
-  margin-top: -35px;
-  margin-left: -35px;
-  text-align: center;
-  animation: preloader-rotate 2s infinite linear;
-} */ */
-
-/* @keyframes preloader-rotate {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.loaded_hiding .preloader {
-  transition: 0.3s opacity;
-  opacity: 0;
-}
-
-.loaded .preloader {
-  display: none;
-} */
-
 
 
 
     </style>
+    <script>
+      $(document).ready(function(){
+        $(document).mousemove(function(e) {
+  $('#cursor').css({
+    left:e.pageX - 10,
+    top:e.pageY - 10
+  });
+});
+});
+    </script>
   </head>
   <body>
+
     <!-- <div class="preloader">
       <div class="wrapper">
         <svg class="preloader__image" svg width="1418" height="974" viewBox="0 0 1418 974" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -211,7 +190,7 @@ color: #6B6B6B;
       <img "images/ellipse1.jpeg" class="e1lipse1">
     </div>
     <p>
-      Трубопровотдых — это отель в трубах,<br> в котором можно найти развлечение по&nbsp;душе, отдохнуть со своей семьёй или остаться наедине с самим собой.</p>
+      Трубопровотдых — это отель в трубах,<br> в котором можно найти развлечение по душе,<br> отдохнуть со своей семьёй <br> или остаться наедине с самим собой.</p>
     <div class="ellipse1 png"></div>
     <div class="ellipse2"></div>
     <div class="ellipse3"></div>
