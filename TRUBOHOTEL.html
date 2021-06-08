@@ -157,7 +157,12 @@ font-size: 20px;
 line-height: 24px;
 
 color: #6B6B6B;
+}
 
+div {
+width: 150px; /* ширина элемента */
+height: 150px; /* высота элемента */
+border: 1px solid green; /* сплошная граница элемента зеленого цвета */
 }
 
 
@@ -171,6 +176,13 @@ color: #6B6B6B;
     top:e.pageY - 10
   });
 });
+  $(document).ready(function(){
+	  $( "div" ).hover(function(){ // задаем функцию при наведении курсора на элемент
+	    $( "div" ).css( "background", "green" ) // задаем цвет заднего фона
+	    }, function(){ // задаем функцию, которая срабатывает, когда указатель выходит из элемента
+	    $( "div" ).css( "background", "red" ) // задаем цвет заднего фона
+	  });
+	});
 });
     </script>
   </head>
@@ -189,6 +201,7 @@ color: #6B6B6B;
     <div id="cursor">
       <img "images/ellipse1.jpeg" class="e1lipse1">
     </div>
+<div></div>
     <p>
       Трубопровотдых — это отель в трубах,<br> в котором можно найти развлечение по душе,<br> отдохнуть со своей семьёй <br> или остаться наедине с самим собой.</p>
     <div class="ellipse1 png"></div>
