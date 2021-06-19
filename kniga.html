@@ -26,6 +26,7 @@
         z-index: 50;
         top: 600px;
         height: 400px;
+        top: 15vw;
       }
       #boxArea .turn-page {
         -webkit-background-size: 100% 100%;
@@ -50,9 +51,9 @@
       }
       h1 {
         display: block;
-        position: absolute;
-  font-size: 6.434em;
-  top: 25%;
+        position: relative;
+        font-size: 9.4vw;
+        top: 6vw;
   z-index: 1;
   left: 0;
   right: 0;
@@ -61,19 +62,15 @@
   font-weight: 300;
   text-align: center;
       }
-      .footer {
-        position: absolute;
-  width: 1365px;
-  height: 97px;
-  left: 25px;
-  top: 300%;
-  font-family: Mazzard;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 26px;
-  color: #000000;
-  z-index: 10;
+      .name {
+        z-index: 10;
+        position: relative;
+        font-family: Mazzard;
+        font-style: normal;
+        font-weight: normal;
+        top: 95vw;
+        left: 2vw;
+        width: 400px;
       }
 
 
@@ -143,7 +140,49 @@
       	background-size:100% 100%;
       }
 
+      .menu-main {
+        list-style: none;
+        margin: 2.7vw 0 0.35vw;
+      padding: 7vw 0 0.35vw;
+        text-align: center;
+      }
+      .menu-main li {display: inline-block;}
+      .menu-main li:after {
+        content: "|";
+        color: #0001FC;
+        display: inline-block;
+        vertical-align:top;
+      }
+      .menu-main li:last-child:after {content: none;}
+      .menu-main a {
+        text-decoration: none;
+        font-family: Mazzard;
+        position: relative;
+        padding-bottom: 1.39vw;
+      margin: 0 6.94vw 0 1.39vw;
+        font-size: 1.8vw;
+        left: 2vw;
+        display: inline-block;
+        transition: color .2s;
 
+      }
+      .menu-main a, .menu-main a:visited {color: #000000;}
+      .menu-main a.current, .menu-main a:hover{color: #0001FC;}
+      .menu-main a:before,
+      .menu-main a:after {
+        content: "";
+        position: absolute;
+        height: 4px;
+        top: auto;
+        right: 50%;
+        bottom: -5px;
+        left: 50%;
+        background: #0001FC;
+        transition: .8s;
+      }
+      .menu-main a:hover:before, .menu-main .current:before {left: 0;}
+      .menu-main a:hover:after, .menu-main .current:after {right: 0;}
+      }
     </style>
     <script type="text/javascript">
       $("#flipbook").turn({
@@ -154,6 +193,19 @@
     </script>
   </head>
   <body>
+<img src="images/backkniga.jpg" class="backkniga">
+<h1>КНИЖНОЕ ИЗДАНИЕ</h1>
+    <ul class="menu-main">
+    <li><a href="https://angelina1905.github.io/WEB-SITE10/deti">детям</a></li>
+    <li><a href="https://angelina1905.github.io/WEB-SITE10/meropriyatia">мероприятия</a></li>
+    <li><a href="https://angelina1905.github.io/modul3/testim.html">дополнительные<br>услуги</a></li>
+    <li><a href="https://angelina1905.github.io/WEB-SITE10/zabota">забота<br>о гостях</a></li>
+    <li><a href="" class="current">книжное<br>издание</a></li>
+    </ul>
+    <div class="name">
+      Рощик Ангелина <br>
+      Б20ДЗ06б
+    </div>
 
 <div id="boxArea">
  <div style="background-image: url(images/1.jpg)"></div>
@@ -214,14 +266,10 @@
 
 
 
-    <div class="footer">
-      Рощик Ангелина <br>
-      Б20ДЗ06б
-    </div>
     <img src="images/burger.svg" class="burger">
     <a href="https://angelina1905.github.io/WEB-SITE10/menu" class="burger"></a>
-    <h1>КНИЖНОЕ ИЗДАНИЕ</h1>
-<img src="images/backkniga.jpg" class="backkniga">
+
+
 
   </body>
 </html>
