@@ -26,9 +26,9 @@ left: 0;
     }
     h1 {
       display: block;
-      position: absolute;
-font-size: 6.434em;
-top: 25%;
+      position: relative;
+      font-size: 9.4vw;
+      top: 7vw;
 z-index: 1;
 left: 0;
 right: 0;
@@ -92,55 +92,95 @@ top: 5000px;
 z-index: 10;
 }
 .texxxt1 {
-  position: absolute;
-width: 544px;
-height: 228px;
-left: 871px;
-top: 1149px;
+  width: 450px;
+      left: 64vw;
+      top: 50vw;
 }
 p {
-  position: absolute;
-font-family: Mazzard;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 28px;
-z-index: 10;
-color: #000000;
+  position: relative;
+  font-family: Mazzard;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.67vw;
+  line-height: 1.94vw;
+  z-index: 10;
 }
 .texxxt2 {
-position: absolute;
-width: 544px;
-height: 145px;
-left: 25px;
-top: 1950px;
+  width: 544px;
+      left: 2vw;
+      top: 90vw;
 }
 .texxxt3 {
-  position: absolute;
-width: 544px;
-height: 180px;
-left: 800px;
-top: 2230px;
+  width: 544px;
+      left: 58vw;
+      top: 103vw;
 }
 .texxxt4 {
-  position: absolute;
-width: 544px;
-height: 130px;
-left: 820px;
-top: 4000px;
+  width: 490px;
+      left: 60vw;
+      top: 220vw;
 }
 .texxxt5 {
+  width: 542px;
+      left: 2vw;
+      top: 262vw;
+}
+.menu-main {
+  list-style: none;
+  margin: 2.7vw 0 0.35vw;
+padding: 9vw 0 0.35vw;
+  text-align: center;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #0001FC;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: Mazzard;
+  position: relative;
+  padding-bottom: 1.39vw;
+margin: 0 6.94vw 0 1.39vw;
+  font-size: 1.8vw;
+  left: 2vw;
+  display: inline-block;
+  transition: color .2s;
+
+}
+.menu-main a, .menu-main a:visited {color: #000000;}
+.menu-main a.current, .menu-main a:hover{color: #0001FC;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
   position: absolute;
-width: 542px;
-height: 58px;
-left: 27px;
-top: 4680px;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #0001FC;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}
 }
     </style>
   </head>
   <body>
-    <div class="texxxt1">
-      <p>Мы заботимся о наших гостях,<br>
+      <h1>ЗАБОТА О ГОСТЯХ</h1>
+    <img src="images/backzabota.jpg" class="backzabota">
+    <ul class="menu-main">
+  <li><a href="https://angelina1905.github.io/WEB-SITE10/deti">детям</a></li>
+  <li><a href="">мероприятия</a></li>
+  <li><a href="https://angelina1905.github.io/modul3/testim.html">дополнительные<br>услуги</a></li>
+  <li><a href="" class="current">забота<br>о гостях</a></li>
+  <li><a href="https://angelina1905.github.io/WEB-SITE10/kniga">книжное<br>издание</a></li>
+</ul>
+      <p class="texxxt1">Мы заботимся о наших гостях,<br>
 поэтому у каждого человека в номере<br>
 есть своя ключ-карта, с помощью которой<br>
 вы будете добираться до номера на лифте.
@@ -148,24 +188,16 @@ top: 4680px;
 <br>
 Также эта карта включает свет<br>
 и кондиционер в вашем номере. </p>
-    </div>
-    <div class="texxxt2">
-      <p>В том числе в комплектацию каждого номера <br> входит: вода, комплект из трёх полотенец <br> на одного человека.  </p>
-    </div>
-    <div class="texxxt3">
-      <p>Также у нас есть специальные значки,<br>
+      <p class="texxxt2">В том числе в комплектацию каждого номера <br> входит: вода, комплект из трёх полотенец <br> на одного человека.  </p>
+      <p class="texxxt3">Также у нас есть специальные значки,<br>
 чтобы дать понять окружающим людям и нашему <br> персоналу (его вы можете отличить по бейджам), <br>
 что вас нельзя беспокоить, или то, что вашему <br> номеру нужна уборка. </p>
-    </div>
-    <div class="texxxt4">
-      <p>Здесь вы также можете посмотреть <br>
+      <p class="texxxt4">Здесь вы также можете посмотреть <br>
 наше брендированное мыло, средство защиты <br>
 от вируса — маску, а также найти подарок <br>
 для самых внимательных гостей.</p>
-    </div>
-    <div class="texxxt5">
-      <p>В люкс номер входит всё тоже самое,<br> но дополняются брендированые носки нашего<br> отеля для всей вашей семьи.</p>
-    </div>
+      <p class="texxxt5">В люкс номер входит всё тоже самое,<br> но дополняются брендированые носки нашего<br> отеля для всей вашей семьи.</p>
+
     <img src="images/noski.jpg" class="noski">
     <img src="images/polot.jpg" class="polot">
     <img src="images/propusk.jpg" class="propusk">
@@ -177,7 +209,5 @@ top: 4680px;
     </div>
     <img src="images/burger.svg" class="burger">
     <a href="https://angelina1905.github.io/WEB-SITE10/menu" class="burger"></a>
-    <h1>ЗАБОТА О ГОСТЯХ</h1>
-<img src="images/backzabota.jpg" class="backzabota">
   </body>
 </html>
