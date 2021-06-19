@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheet/reset.css">
     <title></title>
     <style media="screen">
       html {
@@ -30,8 +31,8 @@ min-width: 350px;
       h1 {
         display: block;
         position: absolute;
-font-size: 6.434em;
-top: 20%;
+font-size: 9.4vw;
+top: 9.4vw;
 z-index: 1;
 left: 0;
 right: 0;
@@ -41,36 +42,34 @@ font-weight: 300;
 text-align: center;
       }
       p {
-        /* position: absolute;
-    width: 826px;
-    height: 345px;
-    left: 168px;
-    top: 600px;
+        position: relative;
     font-family: Mazzard;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.2em;
-    line-height: 152%;
-    color: #000000;
-      z-index: 4; */
-      display: block;
-      position: relative;
-font-size: 1.2em;
-top: 550px;
-z-index: 1;
-left: 100px;
-line-height: 152%;
-font-family: Mazzard;
-font-style: normal;
-text-align: left;
+    font-size: 1.67vw;
+    line-height: 2.5vw;
+    z-index: 10;
+    top: 45vw;
+    left: 12vw;
+    width: 50vw;
       }
       .video {
-        position: absolute;
-        z-index: 5;
-  left: 30%;
-    top: 200%;
+        position: relative;
+  z-index: 5;
+  left: 30vw;
+  width: 50vw;
+  top: 75vw;
       }
-
+      .name {
+        z-index: 10;
+        position: relative;
+        font-family: Mazzard;
+        font-style: normal;
+        font-weight: normal;
+        top: 90vw;
+        left: 2vw;
+        width: 400px;
+      }
     </style>
   </head>
   <body>
@@ -88,6 +87,10 @@ text-align: left;
 разрушить ваши планы на отдых!</p>
 <div class="video">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eZ8d7UE48mk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="name">
+  Рощик Ангелина <br>
+  Б20ДЗ06б
 </div>
   <img src="images/backonas.jpg" class="backonas">
 </body>
