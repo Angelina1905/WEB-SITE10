@@ -7,6 +7,9 @@
       body {
         background-color: #FEDCDB;
       }
+      html {
+        font-size: 1.5vw;
+      }
       .backmeropr{
         position: absolute;
 width: 100%;
@@ -26,9 +29,9 @@ min-width: 350px;
       }
       h1 {
         display: block;
-        position: absolute;
-font-size: 6.434em;
-top: 25%;
+        position: relative;
+        font-size: 9.4vw;
+        top: 7vw;
 z-index: 1;
 left: 0;
 right: 0;
@@ -51,61 +54,134 @@ z-index: 10;
       color: black;
     }
     .plakat1 {
-position: absolute;
-width: 47%;
-z-index: 10;
-left: 0;
-top: 140%;
+      position: relative;
+          width: 47vw;
+          z-index: 10;
+          left: 0;
+          top: 60vw;
     }
     .plakat2 {
-position: absolute;
-width: 47%;
-z-index: 10;
-right: 0;
-top: 300%;
+      position: absolute;
+          width: 47vw;
+          z-index: 10;
+          right: 0;
+          top: 133vw;
     }
     .plakat3 {
-position: absolute;
-width: 47%;
-z-index: 10;
-left: 0;
-top: 460%;
+      position: absolute;
+          width: 47vw;
+          z-index: 10;
+          left: 0;
+          top: 205vw;
     }
     .plakat4 {
       position: absolute;
-          width: 30%;
-          z-index: 10;
-          right: 0;
-          top: 655%;
+        width: 30vw;
+        z-index: 10;
+        right: 0;
+        top: 290vw;
     }
     .plakat5 {
       position: absolute;
-          width: 30%;
-          z-index: 10;
-          right: 31%;
-          top: 655%;
+    width: 30vw;
+    z-index: 10;
+    right: 31%;
+    top: 290vw;
     }
     .plakat6 {
       position: absolute;
-      width: 47%;
+      width: 47vw;
       z-index: 10;
       left: 0;
-      top: 790%;
+      top: 350vw;
     }
+    .name {
+      z-index: 10;
+      position: relative;
+      font-family: Mazzard;
+      font-style: normal;
+      font-weight: normal;
+      top: 329vw;
+      left: 2vw;
+      width: 400px;
+    }
+
+
+
+
+
+
+
+
+
+
+    .menu-main {
+      list-style: none;
+      margin: 2.7vw 0 0.35vw;
+    padding: 9vw 0 0.35vw;
+      text-align: center;
+    }
+    .menu-main li {display: inline-block;}
+    .menu-main li:after {
+      content: "|";
+      color: #0001FC;
+      display: inline-block;
+      vertical-align:top;
+    }
+    .menu-main li:last-child:after {content: none;}
+    .menu-main a {
+      text-decoration: none;
+      font-family: Mazzard;
+      position: relative;
+      padding-bottom: 1.39vw;
+    margin: 0 6.94vw 0 1.39vw;
+      font-size: 1.8vw;
+      left: 2vw;
+      display: inline-block;
+      transition: color .2s;
+
+    }
+    .menu-main a, .menu-main a:visited {color: #000000;}
+    .menu-main a.current, .menu-main a:hover{color: #0001FC;}
+    .menu-main a:before,
+    .menu-main a:after {
+      content: "";
+      position: absolute;
+      height: 4px;
+      top: auto;
+      right: 50%;
+      bottom: -5px;
+      left: 50%;
+      background: #0001FC;
+      transition: .8s;
+    }
+    .menu-main a:hover:before, .menu-main .current:before {left: 0;}
+    .menu-main a:hover:after, .menu-main .current:after {right: 0;}
+    }
+
     </style>
   </head>
   <body>
+    <img src="images/backmeropr.jpg" class="backmeropr">
+    <h1>МЕРОПРИЯТИЯ</h1>
+    <ul class="menu-main">
+  <li><a href="">детям</a></li>
+  <li><a href="" class="current">мероприятия</a></li>
+  <li><a href="">дополнительные<br>услуги</a></li>
+  <li><a href="">забота<br>о гостях</a></li>
+  <li><a href="">книжное<br>издание</a></li>
+</ul>
     <img src="images/plakat1.jpg" class="plakat1">
     <img src="images/plakat2.jpg" class="plakat2">
     <img src="images/plakat3.jpg" class="plakat3">
     <img src="images/plakat4.jpg" class="plakat4">
     <img src="images/plakat5.jpg" class="plakat5">
     <img src="images/plakat6.jpg" class="plakat6">
-<h1>МЕРОПРИЯТИЯ</h1>
     <img src="images/burger.svg" class="burger">
     <a href="https://angelina1905.github.io/WEB-SITE10/menu" class="burger"></a>
-    <p>Рощик Ангелина <br>
-    Б20ДЗ06б</p>
-<img src="images/backmeropr.jpg" class="backmeropr">
+    <div class="name">
+      Рощик Ангелина <br>
+      Б20ДЗ06б
+    </div>
   </body>
 </html>
