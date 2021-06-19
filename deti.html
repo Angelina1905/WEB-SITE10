@@ -2,10 +2,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheet/reset.css">
     <title></title>
     <style media="screen">
       body {
         background-color: #FEDCDB;
+      }
+      html {
+        font-size: 1.5vw;
       }
       .backdeti {
         min-height: 100%;
@@ -26,9 +30,9 @@
       }
       h1 {
         display: block;
-        position: absolute;
-  font-size: 6.434em;
-  top: 25%;
+        position: relative;
+        font-size: 9.4vw;
+        top: 12vw;
   z-index: 1;
   left: 0;
   right: 0;
@@ -37,80 +41,114 @@
   font-weight: 300;
   text-align: center;
       }
-      .footer {
-        position: absolute;
-  width: 1365px;
-  height: 97px;
-  left: 25px;
-  top: 400%;
-  font-family: Mazzard;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 26px;
-  color: #000000;
-  z-index: 10;
+      .name {
+        z-index: 10;
+        position: relative;
+        font-family: Mazzard;
+        font-style: normal;
+        font-weight: normal;
+        top: 126vw;
+        left: 2vw;
+        width: 400px;
       }
-      p {
-        position: absolute;
+        p {
+          position: relative;
       font-family: Mazzard;
       font-style: normal;
       font-weight: normal;
-      font-size: 24px;
-      line-height: 28px;
+      font-size: 1.67vw;
+      line-height: 1.94vw;
       z-index: 10;
-      color: #000000;
       }
       .teexxt1 {
-        position: absolute;
-width: 403px;
-height: 152px;
-left: 930px;
-    top: 624px;
+        width: 403px;
+            left: 68vw;
+            top: 10vw;
       }
       .teexxt2 {
-        position: absolute;
-width: 266px;
-height: 59px;
-left: 145px;
-    top: 1790px;
+        width: 266px;
+            left: 11vw;
+            top: 85.5vw;
       }
       .teexxt3 {
+        width: 262px;
+            left: 71vw;
+            top: 120.5vw;
+      }
+
+      .menu-main {
+        list-style: none;
+        margin: 2.7vw 0 0.35vw;
+      padding: 20vw 0 0.35vw;
+        text-align: center;
+      }
+      .menu-main li {display: inline-block;}
+      .menu-main li:after {
+        content: "|";
+        color: #0001FC;
+        display: inline-block;
+        vertical-align:top;
+      }
+      .menu-main li:last-child:after {content: none;}
+      .menu-main a {
+        text-decoration: none;
+        font-family: Mazzard;
+        position: relative;
+        padding-bottom: 1.39vw;
+      margin: 0 6.94vw 0 1.39vw;
+        font-size: 1.8vw;
+        left: 2vw;
+        display: inline-block;
+        transition: color .2s;
+
+      }
+      .menu-main a, .menu-main a:visited {color: #000000;}
+      .menu-main a.current, .menu-main a:hover{color: #0001FC;}
+      .menu-main a:before,
+      .menu-main a:after {
+        content: "";
         position: absolute;
-width: 262px;
-height: 89px;
-left: 970px;
-    top: 2300px;
+        height: 4px;
+        top: auto;
+        right: 50%;
+        bottom: -5px;
+        left: 50%;
+        background: #0001FC;
+        transition: .8s;
+      }
+      .menu-main a:hover:before, .menu-main .current:before {left: 0;}
+      .menu-main a:hover:after, .menu-main .current:after {right: 0;}
       }
     </style>
   </head>
   <body>
-  <div class="teexxt1">
-    <p>
+    <img src="images/backdeti.jpg" class="backdeti">
+    <h1>ДЕТЯМ</h1>
+    <ul class="menu-main">
+  <li><a href="" class="current">детям</a></li>
+  <li><a href="https://angelina1905.github.io/WEB-SITE10/meropriyatia">мероприятия</a></li>
+  <li><a href="https://angelina1905.github.io/modul3/testim.html">дополнительные<br>услуги</a></li>
+  <li><a href="https://angelina1905.github.io/WEB-SITE10/zabota">забота<br>о гостях</a></li>
+  <li><a href="https://angelina1905.github.io/WEB-SITE10/kniga">книжное<br>издание</a></li>
+</ul>
+    <p class="teexxt1">
     Специальные <br>
 оснащённые всем<br>
 необходимым<br>
 комнаты для детей <br>
 до года.
 </p>
-  </div>
-  <div class="teexxt2">
-    <p>
+    <p class="teexxt2">
   Детские дискотеки.
 </p>
-  </div>
-  <div class="teexxt3">
-    <p>
+    <p class="teexxt3">
   Настольные игры,<br> книги.
 </p>
-  </div>
-    <div class="footer">
+    <img src="images/burger.svg" class="burger">
+    <a href="https://angelina1905.github.io/WEB-SITE10/menu" class="burger"></a>
+    <div class="name">
       Рощик Ангелина <br>
       Б20ДЗ06б
     </div>
-    <img src="images/burger.svg" class="burger">
-    <a href="https://angelina1905.github.io/WEB-SITE10/menu" class="burger"></a>
-    <h1>ДЕТЯМ</h1>
-  <img src="images/backdeti.jpg" class="backdeti">
   </body>
 </html>
