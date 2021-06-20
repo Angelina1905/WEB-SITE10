@@ -22,13 +22,10 @@
 
       @import 'stylesheet.css';
       html {
-        font-size: 1.5vw;
+        font-size: 1vw;
       }
       body {
         background-color: #FEDCDB;
-      }
-      .a6 {
-        font-size: .25em;
       }
       .background {
         min-height: 100%;
@@ -43,7 +40,7 @@ min-width: 350px;
 display: block;
 position: relative;
 font-size: 9.4vw;
-top: 0.1vw;
+top: 11vw;
 z-index: 1;
 left: 0;
 right: 0;
@@ -55,10 +52,10 @@ text-align: center;
 .trub {
   width: 520px;
   left: 30vw;
-  top: 30vw;
+  top: 8vw;
 }
       .ellipse2 {
-        position: absolute;
+        position: relative;
         width: 9.93vw;
         height: 9.93vw;
         left: 50vw;
@@ -74,7 +71,7 @@ text-align: center;
       height: 25.93vw;
     }
     .ellipse3 {
-      position: absolute;
+      position: relative;
   width: 9.93vw;
   height: 9.93vw;
   left: 25vw;
@@ -90,14 +87,15 @@ text-align: center;
     height: 25.93vw;
   }
   .ellipse4 {
-    position: absolute;
-  width: 10%;
-  height: 22%;
-  left: 28%;
-  top: 562%;
-  z-index: 3;
-  border-radius: 100%;
-  background: #FF8C89;
+    position: relative;
+width: 9.93vw;
+height: 9.93vw;
+left: 25vw;
+z-index: 3;
+border-radius: 100%;
+top: 196vw;
+background: #FF8C89;
+transition: 300ms;
 }
 .burger {
 position: absolute;
@@ -107,9 +105,31 @@ right:3%;
 top: 6%;
 z-index: 3;
 }
+.a2p {
+  width: 400px;
+    left: 60vw;
+    top: 16vw;
+    color: gray;
+}
+.b2p {
+  width: 450px;
+    left: 60vw;
+    top: 17vw;
+    color: #0001FC;
+}
+.h444 {
+  width: 400px;
+      left: 60vw;
+      top: 13vw;
+}
+.c2p {
+  width: 200px;
+      left: 80vw;
+      top: 4.5vw;
+      color: gray;
+}
 p {
-
-line-height: 152%;
+line-height: 2.7vw;
 text-align: center;
 position: relative;
 font-family: Mazzard;
@@ -119,39 +139,42 @@ font-size: 1.81vw;
 z-index: 10;
 }
 h2 {
-  position: absolute;
-width: 544px;
-height: 54px;
-left: 871px;
-top: 1372px;
-
-font-family: Mazzard;
-font-style: normal;
-font-weight: 300;
-font-size: 48px;
-line-height: 57px;
-z-index: 4;
-color: #000000;
+  display: block;
+  position: relative;
+  font-size: 3.33vw;
+  line-height: 2vw;
+  z-index: 1;
+  font-family: Mazzard;
+  font-style: normal;
+  font-weight: 300;
 }
-.p {
-  position: absolute;
-width: 401.58px;
-height: 32px;
-left: 871px;
-top: 1475px;
-
-font-family: Mazzard;
-font-style: normal;
-font-weight: 300;
-font-size: 20px;
-line-height: 24px;
-
-color: #6B6B6B;
+h3 {
+  display: block;
+  position: relative;
+  font-size: 1.39vw;
+  line-height: 2vw;
+  z-index: 1;
+  font-family: Mazzard;
+  font-style: normal;
+  font-weight: 300;
+  color: grey;
 }
-
-
+h4 {
+  display: block;
+  position: relative;
+  font-size: 4.44vw;
+  z-index: 1;
+  font-family: Mazzard;
+  font-style: normal;
+  font-weight: 300;
+}
+.standart {
+  width: 520px;
+      left: 60vw;
+      top: 15vw;
+}
 .ellipse1 {
-  position: absolute;
+  position: relative;
 width: 9.93vw;
 height: 9.93vw;
 left: 4vw;
@@ -186,7 +209,10 @@ transition: 300ms;
     </script> -->
   </head>
   <body>
-
+    <img src="images/background.jpg" class="background">
+<h1>ТРУБОПРОВОТДЫХ</h1>
+<p class="trub">
+  Трубопровотдых — это отель в трубах,<br> в котором можно найти развлечение по душе,<br> отдохнуть со своей семьёй <br> или остаться наедине с самим собой.</p>
     <!-- <div class="preloader">
       <div class="wrapper">
         <svg class="preloader__image" svg width="1418" height="974" viewBox="0 0 1418 974" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -197,29 +223,23 @@ transition: 300ms;
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="javascripts/jquery.drawsvg.js"></script>
     <script src="javascripts/main.js"></script>
-    <div id="cursor">
-      <img "images/ellipse1.jpeg" class="e1lipse1">
-    </div>
-<div class="photo1" style="background-image: url(images/1.jpg)"></div>
-    <p class="trub">
-      Трубопровотдых — это отель в трубах,<br> в котором можно найти развлечение по душе,<br> отдохнуть со своей семьёй <br> или остаться наедине с самим собой.</p>
-    <div class="ellipse1 png"></div>
+
+
+    <div class="ellipse1"></div>
     <div class="ellipse2"></div>
     <div class="ellipse3"></div>
     <div class="ellipse4"></div>
-    <div id="draggable"></div>
+
   <img src="images/burger.svg" class="burger">
   <a href="https://angelina1905.github.io/WEB-SITE10/menu" class="burger"></a>
-    <h1>ТРУБОПРОВОТДЫХ</h1>
 
-    <div class="a6">
-    <h2>НОМЕР «СТАНДАРТ»</h2>
-    <div class="p">
-      <p>Количество намеров: 2 <br> Количество гостей: 2 <br> Площадь: 40кв.м <br></p>
+
+    <div class="a2">
+    <h2 class="standart">НОМЕР «СТАНДАРТ»</h2>
+      <h3 class="a2p">Количество намеров: 2 <br> Количество гостей: 2 <br> Площадь: 40кв.м <br></h3>
+      <h3 class="b2p">Получить больше информации</h3>
+      <h4 class="h444">1400 руб</h4>
+      <h3 class="c2p">за ночь</h3>
     </div>
-    </div>
-
-
-<img src="images/background.jpg" class="background">
   </body>
 </html>
