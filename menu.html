@@ -20,11 +20,10 @@ min-width: 350px;
       }
       .cross {
         position: relative;
-    width: 3%;
-    height: 3%;
-    right: -48%;
-    top: -50px;
-    z-index: 15;
+  width: 3%;
+  left: 48vw;
+  top: -3.5vw;
+  z-index: 15;
       }
       .menu1 {
         position: relative;
@@ -76,6 +75,11 @@ min-width: 350px;
       .konnta {
         display: none;
       }
+
+      .name {
+      display: none;
+      }
+
       @media only screen and (max-width: 375px) {
 body {
   background-color: #0001FC;
@@ -89,7 +93,7 @@ body {
       display: block;
       left: 2vw;
       /* right: 0; */
-      top: 25vw;
+      top: 35vw;
       font-family: Mazzard;
       font-style: normal;
       font-weight: 300;
@@ -102,69 +106,65 @@ body {
         }
         .giid {
           position: relative;
-              /* width: 414px; */
-              display: block;
-              left: 7vw;
-              top: 35vw;
-              font-family: Mazzard;
-              font-style: normal;
-              font-weight: 300;
-              font-size: 9.60vw;
-              line-height: 11.47vw;
-              /* display: flex; */
-              align-items: center;
-              text-align: center;
-              color: #FFFFFF;
+    /* width: 414px; */
+    display: block;
+    left: 7vw;
+    top: 55vw;
+    font-family: Mazzard;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 9.60vw;
+    line-height: 11.47vw;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
         }
         .usl {
-          position: absolute;
-        width: 414px;
-        left: 2vw;
-        top: 95vw;
-        font-family: Mazzard;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 9.60vw;
-        line-height: 11.47vw;
-        display: block;
-        align-items: center;
-        text-align: center;
-        color: #FFFFFF;
+          position: relative;
+    width: 414px;
+    left: 2vw;
+    top: 75vw;
+    font-family: Mazzard;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 9.60vw;
+    line-height: 11.47vw;
+    display: block;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
         }
         .ooonaaas {
-          position: absolute;
-width: 414px;
-left: 0px;
-top: 526px;
-
-font-family: Mazzard;
-font-style: normal;
-font-weight: 300;
-font-size: 9.60vw;
-line-height: 11.47vw;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #FFFFFF;
+          position: relative;
+      width: 414px;
+      left: 2vw;
+      top: 95vw;
+      font-family: Mazzard;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 9.60vw;
+      line-height: 11.47vw;
+      display: block;
+      align-items: center;
+      text-align: center;
+      color: #FFFFFF;
 
         }
         .konnta {
-          position: absolute;
-  width: 414px;
-  left: 0px;
-  top: 661px;
-
-  font-family: Mazzard;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 9.60vw;
-  line-height: 11.47vw;
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  color: #FFFFFF;
+          position: relative;
+    width: 414px;
+    left: 2vw;
+    top: 115vw;
+    font-family: Mazzard;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 9.60vw;
+    line-height: 11.47vw;
+    display: block;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
         }
         .menu1 {
         display: none;
@@ -181,7 +181,26 @@ color: #FFFFFF;
         .menu5 {
           display: none;
         }
+.cross {
+  position: relative;
+      width: 10%;
+      left: 48vw;
+      top: 3vw;
+      z-index: 35;
       }
+      .name {
+        z-index: 10;
+        position: relative;
+        font-family: Mazzard;
+        font-style: normal;
+        font-weight: normal;
+        top: 145vw;
+        display: block;
+        left: 2vw;
+        width: 400px;
+        color: white;
+      }
+    }
     </style>
   </head>
   <body>
@@ -192,12 +211,16 @@ color: #FFFFFF;
   <a href="https://angelina1905.github.io/WEB-SITE10/gid" class="menu2"><img src="images/menu2.svg" class="menu2"></a>
   <a href="https://angelina1905.github.io/WEB-SITE10/razmesh" class="menu1"><img src="images/menu1.svg" class="menu1"></a>
 
-<h1 class="vari">ВАРИАНТЫ <br>РАЗМЕЩЕНИЯ</h1>
-<h1 class="giid">ГИД <br>ПО ОТЕЛЮ</h1>
-<h1 class="usl">УСЛУГИ</h1>
-<h1 class="ooonaaas">О НАС</h1>
-<h1 class="konnta">КОНТАКТЫ</h1>
+<a href="https://angelina1905.github.io/WEB-SITE10/razmesh"><h1 class="vari">ВАРИАНТЫ <br>РАЗМЕЩЕНИЯ</h1></a>
+<a href="#"><h1 class="giid">ГИД <br>ПО ОТЕЛЮ</h1></a>
+<a href="#"><h1 class="usl">УСЛУГИ</h1></a>
+<a href="#"><h1 class="ooonaaas">О НАС</h1></a>
+<a href="#"><h1 class="konnta">КОНТАКТЫ</h1></a>
 
+<div class="name">
+  Рощик Ангелина <br>
+  Б20ДЗ06б
+</div>
     <img src="images/backmenu.jpg" class="backmenu">
   </body>
 </html>
