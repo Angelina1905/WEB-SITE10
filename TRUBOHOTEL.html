@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width">
     <meta charset="utf-8">
+      <link rel="stylesheet" href="stylesheet/reset.css">
     <title></title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -263,6 +265,195 @@ transition: 300ms;
     left: 2vw;
     width: 400px;
 }
+.truboadapt {
+display: none;
+}
+@media only screen and (max-width: 414px) {
+  .truboadapt {
+    min-height: 100%;
+    min-width: 350px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+  .background{
+    display: none;
+  }
+  .ellipse1 {
+  display: none;
+  }
+  .ellipse2 {
+  display: none;
+  }
+  .ellipse3 {
+  display: none;
+  }
+  .ellipse4 {
+  display: none;
+  }
+  .standart {
+    width: 300px;
+      left: 5vw;
+      top: 130vw;
+  }
+  p {
+    line-height: 4.7vw;
+      text-align: center;
+      position: relative;
+      font-family: Mazzard;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 3.86vw;
+  }
+  h2 {
+    display: block;
+    position: relative;
+    font-size: 6.28vw;
+    line-height: 2vw;
+    z-index: 1;
+    font-family: Mazzard;
+    font-style: normal;
+    font-weight: 300;
+  }
+  h3 {
+    display: block;
+    position: relative;
+    font-size: 3.86vw;
+    line-height: 4.59vw;
+    z-index: 1;
+    font-family: Mazzard;
+    font-style: normal;
+    font-weight: 300;
+    color: grey;
+  }
+  h4 {
+    display: block;
+    position: relative;
+    font-size: 8.70vw;
+    z-index: 1;
+    font-family: Mazzard;
+    font-style: normal;
+    font-weight: 300;
+  }
+  .a2p {
+    width: 300px;
+    left: 5vw;
+    top: 139vw;
+    color: gray;
+  }
+  .b2p {
+    width: 350px;
+        left: 5vw;
+        top: 145vw;
+        color: #0001FC;
+  }
+  .h444 {
+    width: 200px;
+    left: 5vw;
+    top: 151vw;
+  }
+  .c2p {
+    width: 200px;
+      left: 45vw;
+      top: 145.6vw;
+      color: gray;
+  }
+  .a3p {
+    width: 300px;
+      left: 5vw;
+      top: 418vw;
+      color: gray;
+  }
+  .b3p {
+    width: 350px;
+        left: 5vw;
+        top: 425vw;
+        color: #0001FC;
+  }
+  .h666 {
+    width: 200px;
+    left: 5vw;
+    top: 432vw;
+  }
+  .c3p {
+    width: 200px;
+    left: 45vw;
+    top: 426.5vw;
+    color: gray;
+  }
+  .a1p {
+    width: 300px;
+    left: 5vw;
+    top: 279vw;
+    color: gray;
+  }
+  .b1p {
+    width: 350px;
+      left: 5vw;
+      top: 285vw;
+      color: #0001FC;
+  }
+  .h111 {
+    width: 300px;
+left: 5vw;
+top: 290vw;
+  }
+  .c1p {
+    width: 200px;
+    left: 46vw;
+    top: 284.9vw;
+    color: gray;
+  }
+  .name {
+    z-index: 10;
+    position: relative;
+    font-family: Mazzard;
+    font-style: normal;
+    font-weight: normal;
+    top: 498vw;
+    font-size: 7vw;
+    left: 2vw;
+    width: 300px;
+  }
+  .luksss {
+    width: 320px;
+    left: 5vw;
+    top: 270vw;
+    line-height: 3.5vw;
+  }
+  .luks {
+    width: 320px;
+        left: 5vw;
+        top: 410vw;
+        line-height: 3.5vw;
+  }
+  h1 {
+  display: block;
+  position: relative;
+  font-size: 9.4vw;
+  top: 22vw;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  font-family: Mazzard;
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+  }
+  .trub {
+    left: 7vw;
+    top: 28vw;
+    width: 350px;
+    z-index: 10;
+  }
+
+
+}
+
+
     </style>
     <!-- <script>
       $(document).ready(function(){
@@ -325,6 +516,6 @@ transition: 300ms;
           Рощик Ангелина <br>
           Б20ДЗ06б
         </div>
-
+  <img src="images/truboadapt.jpg" class="truboadapt">
   </body>
 </html>
